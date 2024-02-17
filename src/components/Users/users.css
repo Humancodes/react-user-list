@@ -1,0 +1,99 @@
+.mainUserCont {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(221, 239, 255);
+  padding: 40px 70px;
+}
+
+.usersContainer {
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  min-height: 110px;
+  border: 1px solid gray;
+  box-shadow: 10px 8px 8px 0 rgba(0, 0, 0, 0.493),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.user-list {
+  width: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  padding: 15px 20px;
+}
+
+.divider {
+  /* rotate: 90deg; */
+  height: 60px;
+  border: 1px solid gray;
+}
+
+.userDetailCont {
+  text-align: justify;
+  margin: 10px 20px;
+  width: 100%;
+  height: auto;
+}
+
+.fullname {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+}
+.firstName,
+.lastName {
+  padding: 0 2px;
+  color: #0abea3;
+}
+
+.userName,
+.userEmail,
+.bio {
+  display: flex;
+}
+
+.subHead {
+  font-weight: 700;
+  color: rgb(110, 110, 110);
+  padding-right: 3px;
+}
+.data {
+  font-weight: 500;
+  color: grey;
+}
+
+.userSubDetail {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 450px) {
+  .mainUserCont {
+    padding: 40px 2px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 540px) {
+  .mainUserCont {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .usersContainer {
+    width: 553px;
+  }
+}
